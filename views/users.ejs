@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <h1>Users</h1>
+        </div>
+    </div>
+
+    <div class="row">
+            <% currentUsers.forEach(user => { %>
+                <div class="col-sm-3">
+                    <div class="user" >
+                        <h3>
+                            <strong> <%= user.name %> </strong>
+                        </h3>
+                        <p>$ <%= user.gender %></p>
+                    </div>
+                </div>
+            <% }); %>
+        </div>
+    </div>
+</div>
+
